@@ -201,9 +201,10 @@
 
 
 /* 
-    ESERCIZIO N12, N13
+    ESERCIZIO N12
 */
-.ex-12-button, .ex-13-button {
+
+.ex-12-button{
     position: relative;
     display: block;
     width: 200px;
@@ -216,26 +217,6 @@
     text-align: center;
     text-decoration: none;
 }
-.ex-12-top-white, .ex-13-top-white {
-    position: absolute;
-    top: -10px;
-    left: 10%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
-}
-.ex-12-bottom-white, .ex-13-bottom-white {
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
-}
-
-/* 
-    ESERCIZIO N12
-*/
 
 .ex-12-button:hover .ex-12-top-white{
     position: absolute;
@@ -299,3 +280,147 @@
 /* 
     ESERCIZIO N13
 */
+
+.ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+    animation: sliding-ex13-top;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+@keyframes sliding-ex13-top{
+
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+
+    16%{
+        top: -10px;
+        left: 190px;
+    }
+
+    33%{
+        width: 20px;
+        height: 20px;
+        top: 60px;
+        left: 190px;
+    }
+
+    50%{
+        width: 60px;
+        height: 20px;
+        top: 60px;
+        left: -10px;
+    }
+
+    66%{
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        left: -10px;
+    }
+
+    83%{
+        width: 60px;
+        height: 20px;
+        top: -10px;
+        left: -10px;
+    }
+
+    100%{
+        width: 60px;
+        height: 20px;
+        top: -10px;
+        left: 10%;
+    }
+}
+
+
+
+.ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background-color: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background-color: #f5f5f5;
+    width: 60px;
+    height: 20px;
+    animation: sliding-ex13-bottom;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+@keyframes sliding-ex13-bottom{
+
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+
+    16%{
+        bottom: -10px;
+        right: 150px;
+    }
+
+    33%{
+        bottom: 60px;
+        right: 150px;
+    }
+
+    50%{
+        bottom: 60px;
+        right: -10px;
+    }
+
+    66%{
+        bottom: -10px;
+        right: -10px;
+    }
+
+    83%{
+        bottom: -10px;
+        right: -10px;
+    }
+
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
