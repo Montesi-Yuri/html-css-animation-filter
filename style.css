@@ -121,7 +121,7 @@
 */
 .ex-8-img{
     width: 500px;
-    transition: filter 3s ease-in-out, border 2s ease-in-out;
+    transition: 2s ease-in-out;
 }
 
 .ex-8-img:hover{
@@ -135,7 +135,7 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
-    transition: width 3s ease-in-out, filter 3s linear, border 2s ease-in-out 1s;
+    transition: 3s;
 }
 
 .ex-9-img:hover {
@@ -191,7 +191,7 @@
     }
 
     90%{
-        transform: rotate(273deg);
+        transform: rotate(270deg);
     }
 
     100%{
