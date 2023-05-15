@@ -74,7 +74,23 @@
     width: 60px;
     height: 60px;
     background: red;
+    transition: width 2s ease-in-out, height 2s ease-in-out;
 }
+
+.ex-5-square:hover {
+    margin: 20px;
+    width: 180px;
+    height: 180px;
+    background: green;
+}
+
+.ex-5-square:active {
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background: blue
+}
+
 
 /* 
     ESERCIZIO N6, N7, N8
