@@ -93,13 +93,6 @@
 
 
 /* 
-    ESERCIZIO N6, N7, N8
-*/
-.ex-6-img, .ex-7-img, .ex-8-img {
-    width: 500px;
-}
-
-/* 
     ESERCIZIO N6
 */
 .ex-6-img{
@@ -121,6 +114,19 @@
 
 .ex-7-img:hover{
     filter: invert(0.7) hue-rotate(120deg);
+}
+
+/* 
+    ESERCIZIO N8
+*/
+.ex-8-img{
+    width: 500px;
+    transition: filter 3s ease-in-out, border 2s ease-in-out;
+}
+
+.ex-8-img:hover{
+    border-radius: 10px;
+    filter: sepia(0.8) hue-rotate(39deg);     
 }
 
 /* 
