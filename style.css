@@ -152,13 +152,13 @@
 .ex-10-icon {
     font-size: 60px;
     position: relative;
-    animation: spinning-icon;
-    animation-duration: 5s;
+    animation: spinning-icon-ex10;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-@keyframes spinning-icon {
+@keyframes spinning-icon-ex10 {
     0%{
         transform: rotate(0deg);
     }
@@ -174,7 +174,29 @@
 */
 .ex-11-icon {
     font-size: 60px;
+    position: relative;
 }
+
+.ex-11-icon:hover {
+    font-size: 60px;
+    position: relative;
+    animation: spinning-icon-ex11;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition: rotate 0.2s ease-in-out;
+}
+
+@keyframes spinning-icon-ex11{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(273deg);
+    }
+}
+
 
 /* 
     ESERCIZIO N12, N13
