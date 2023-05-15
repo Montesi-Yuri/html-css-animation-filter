@@ -151,7 +151,23 @@
 */
 .ex-10-icon {
     font-size: 60px;
+    position: relative;
+    animation: spinning-icon;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes spinning-icon {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 /* 
     ESERCIZIO N11
