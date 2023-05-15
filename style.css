@@ -181,10 +181,8 @@
     font-size: 60px;
     position: relative;
     animation: spinning-icon-ex11;
-    animation-duration: 1s;
     animation-timing-function: linear;
-    animation-iteration-count: 1;
-    transition: rotate 0.2s ease-in-out;
+    animation-duration: 3s;
 }
 
 @keyframes spinning-icon-ex11{
@@ -192,9 +190,15 @@
         transform: rotate(0deg);
     }
 
-    100%{
+    90%{
         transform: rotate(273deg);
     }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+
 }
 
 
@@ -229,4 +233,26 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+/* 
+    ESERCIZIO N12
+*/
+
+
+
+
+
+
+
+
+
+@keyframes spinning-icon-ex12{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(273deg);
+    }
 }
